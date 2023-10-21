@@ -10,7 +10,7 @@
   "license": "GPL-3.0-or-later",
   "engines": {
     "node": ">=14.7.0"
-  }, 
+  },
   "scripts": {
     "rm": "rimraf out",
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
@@ -71,7 +71,9 @@
     "ts-pattern": "^4.3.0",
     "ws": "^8.13.0"
   },
-  "bin": "./bin/cli.js",
+  "bin": {
+    "cc": "bin/cli.js"
+  },
   "files": [
     "*"
   ],
